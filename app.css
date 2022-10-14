@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@700&display=swap');
+
+html{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    min-height: 100vh;
+    background-color: whitesmoke;
+}
+
+a{
+    position: relative;
+    cursor: auto;
+}
+
+img{
+    width: 45%;
+    margin: calc(10%/6);
+    cursor: pointer;
+    transition: color 0.25s, border-color 0.25s, box-shadow 0.25s, transform 0.25s;
+}
+
+
+img:hover{
+    box-shadow: 0 1em 0.5em -0.4em #1802028e;
+    transform: translateY(-0.25em);
+    border-color: #f1ff5c;
+    color: white;
+}
+
+nav{
+    text-transform: uppercase;
+    border-bottom: 2px solid #b7b7a4;
+    width: 30%;
+    margin-left: calc(10%/6);
+    letter-spacing: 2px;
+    font-size: 1.5em;
+    padding: 1.2em 0;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+h1{
+    font-family: 'Anek Malayalam', sans-serif;
+}
+
+.row{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255,255,255,0.8);
+}
+
+.loader img{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.class{
+    position:absolute;
+}
+
+.photo{
+    position: relative;
+}
+
+.photo-text{
+    position: absolute;
+    color: black;
+}
+
+@media screen and (max-width:1000px){
+    .row{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .row img{
+        width: 90%;
+        /* height: 100%; */
+        margin: calc(10%/2);
+    }
+
+}
+
+@media screen and (max-width:600px){
+    .row img{
+        width: 90%;
+        margin: calc(10%/2);
+    }
+}
